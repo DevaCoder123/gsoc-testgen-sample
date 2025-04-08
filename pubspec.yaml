@@ -1,0 +1,9 @@
+
+## 🚀 Getting Started
+
+Make sure Dart SDK is installed.
+
+### Run tests:
+
+```bash
+dart test
