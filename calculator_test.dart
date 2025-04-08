@@ -15,6 +15,7 @@ void main() {
   test('Multiplication test', () {
     expect(calculator.multiply(4, 3), equals(12));
   });
+  // TODO: Use Gemini API to auto-generate test cases based on uncovered paths
 
   test('Division test', () {
     expect(calculator.divide(10, 2), equals(5.0));
