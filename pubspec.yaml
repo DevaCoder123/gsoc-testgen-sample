@@ -1,9 +1,7 @@
+name: gsoc_testgen_sample
+version: 1.0.0
+environment:
+  sdk: ">=2.12.0 <3.0.0"
 
-## 🚀 Getting Started
-
-Make sure Dart SDK is installed.
-
-### Run tests:
-
-```bash
-dart test
+dev_dependencies:
+  test: ^1.16.0
