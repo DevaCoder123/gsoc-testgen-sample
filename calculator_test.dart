@@ -1,24 +1,35 @@
-// test/calculator_test.dart
-
-import '../lib/calculator.dart';
 import 'package:test/test.dart';
+import '../calculator.dart';
 
 void main() {
   final calculator = Calculator();
 
-  test('adds two numbers', () {
-    expect(calculator.add(2, 3), 5);
+  test('Addition test', () {
+    expect(calculator.add(2, 3), equals(5));
   });
 
-  test('subtracts two numbers', () {
-    expect(calculator.subtract(5, 3), 2);
+  test('Subtraction test', () {
+    expect(calculator.subtract(5, 2), equals(3));
   });
 
-  test('divides two numbers', () {
-    expect(calculator.divide(6, 2), 3);
+  test('Multiplication test', () {
+    expect(calculator.multiply(4, 3), equals(12));
   });
 
-  test('throws error when dividing by zero', () {
-    expect(() => calculator.divide(5, 0), throwsArgumentError);
+  test('Division test', () {
+    expect(calculator.divide(10, 2), equals(5.0));
   });
+
+  test('Division by zero throws error', () {
+    expect(() => calculator.divide(4, 0), throwsArgumentError);
+  });
+
+  // === Gemini API Integration Plan ===
+  // In the future, we plan to integrate Google's Gemini API here.
+  // The API will auto-generate test cases based on the calculator's methods.
+  // Example idea: Given function signatures or sample input-output,
+  // Gemini will suggest edge cases and new test scenarios.
+  //
+  // This can be added as a helper function or an external Dart script
+  // that uses the Gemini API and injects the results into test files.
 }
